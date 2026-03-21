@@ -14,13 +14,10 @@ void loop()
   digitalWrite(LED_ROSSO, HIGH);
   delay(1000);
   digitalWrite(LED_ROSSO, LOW);
-  delay(1000);
   digitalWrite(LED_GIALLO, HIGH);
   delay(1000);
   digitalWrite(LED_GIALLO, LOW);
-  delay(1000);
   digitalWrite(LED_VERDE, HIGH);
   delay(1000);
   digitalWrite(LED_VERDE, LOW);
-  delay(1000);
 }
