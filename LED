@@ -1,12 +1,8 @@
 int LED_ROSSO=13;
-int LED_GIALLO=12;
-int LED_VERDE=11;
 
 void setup()
 {
   pinMode(LED_ROSSO, OUTPUT);
-  pinMode(LED_GIALLO, OUTPUT);
-  pinMode(LED_VERDE, OUTPUT);
 }
 
 void loop()
@@ -14,13 +10,5 @@ void loop()
   digitalWrite(LED_ROSSO, HIGH);
   delay(1000);
   digitalWrite(LED_ROSSO, LOW);
-  delay(1000);
-  digitalWrite(LED_GIALLO, HIGH);
-  delay(1000);
-  digitalWrite(LED_GIALLO, LOW);
-  delay(1000);
-  digitalWrite(LED_VERDE, HIGH);
-  delay(1000);
-  digitalWrite(LED_VERDE, LOW);
   delay(1000);
 }
