@@ -1,0 +1,28 @@
+int LED_ROSSO=13;
+int LED_GIALLO=12;
+int LED_VERDE=11;
+int BOTTONE=10;
+
+void setup()
+{
+  pinMode(LED_ROSSO, OUTPUT);
+  pinMode(LED_GIALLO, OUTPUT);
+  pinMode(LED_VERDE, OUTPUT);
+  pinMode(BOTTONE, INPUT);
+}
+
+void loop()
+{
+  int i=digitalRead(BOTTONE);
+  if(i){
+    digitalWrite(LED_ROSSO, HIGH);
+    delay(1000);
+    digitalWrite(LED_ROSSO, LOW);
+    digitalWrite(LED_GIALLO, HIGH);
+    delay(1000);
+    digitalWrite(LED_GIALLO, LOW);
+    digitalWrite(LED_VERDE, HIGH);
+    delay(1000);
+    digitalWrite(LED_VERDE, LOW);
+  }
+}
