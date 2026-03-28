@@ -1,0 +1,14 @@
+int LED_VERDE=11;
+
+void setup()
+{
+  pinMode(LED_VERDE, OUTPUT);
+  pinMode(A0, INPUT);
+}
+
+void loop()
+{
+  int i=analogRead(A0);
+  int j=map(i, 0, 1020, 255, 0);
+  analogWrite(LED_VERDE, j);
+}
